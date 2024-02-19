@@ -1,0 +1,16 @@
+express for the server
+dotenv to create environment variables
+cookie-parser for parsing cookies
+bcryptjs for hashing passwords
+mongoose for mongodb
+socket.io for RT communicaiton
+JSONwebtokens to create JSON tokens
+
+
+nodemon is used to watch the Express server and automatically refresh it whenever a change is made.
+
+process.env is the NodeJS way of reading environment variables, not express or React
+
+Express allows us to use middleware with app.use. this saves us from having to create a bunch of routes over and over
+
+I think express.Router is creating a generic router object for redirecting http requests to common filepaths. So anything that goest through /api/auth will trigger the AuthRoutes function, which will figure out which route to use based on the full URL.
