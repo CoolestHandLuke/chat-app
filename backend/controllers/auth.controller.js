@@ -14,7 +14,6 @@ export const signup = async (req, res) => {
         }
         // findOne is a MongoDB method, it will look in to the collection and returns
         // the first entry it finds
-        // TODO: Is this right? Doesn't look correct.
         const user = await User.findOne({ username });
 
         if (user) {
